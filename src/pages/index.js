@@ -14,8 +14,7 @@ export default function Home(props) {
 
 export async function getServerSideProps({ req }) {
   // Truy vấn dữ liệu từ MongoDB sử dụng model
-  const baseUrl = process.env.SERVER_URL;
-  const response = await fetch(`${baseUrl}/api/posts`, {
+  const response = await fetch(`/api/posts`, {
     method: "GET",
   });
 
