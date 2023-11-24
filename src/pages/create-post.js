@@ -38,6 +38,7 @@ export default function CreatePost() {
         router.push("/");
       } else {
         console.log(response);
+         router.push("/");
       }
     } catch (error) {
       console.error("Error adding post:", error);
